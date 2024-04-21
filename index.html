@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Item</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Shopping List</h1>
+      <div class="add-items">
+        <h2>Add Items</h2>
+
+        <div class="input-head">
+          <div class="select-category">
+            <label for="categorySelect">Select a Category:</label>
+            <select id="categorySelect">
+              <option value="fruits-vegetables">Fruits/Vegetables</option>
+              <option value="meat-seafood">Meat & Seafood</option>
+              <option value="dairy">Dairy</option>
+              <option value="frozen">Frozen</option>
+              <option value="bread-pasta">Bread & Pasta</option>
+              <option value="snacks">Snacks</option>
+              <option value="beverages">Beverages</option>
+              <option value="cleaning">Cleaning</option>
+              <option value="others">Others</option>
+            </select>
+          </div>
+          <div class="select-category">
+            <label for="nameInput">Enter Name:</label>
+            <input type="text" id="nameInput" placeholder="Enter Name" />
+          </div>
+          <div class="select-category">
+            <label for="quantityInput">Quantity:</label>
+            <input type="number" id="quantityInput" min="1" value="1" />
+          </div>
+          <div class="btn">
+            <button id="addButton">Add To List</button>
+          </div>
+        </div>
+      </div>
+      <div id="categories">
+        <div id="fruits-vegetables" class="box">
+          <h3>FRUITS/VEGETABLES</h3>
+          <div class="items"></div>
+        </div>
+        <div id="meat-seafood" class="box">
+          <h3>MEAT/SEAFOOD</h3>
+          <div class="items"></div>
+        </div>
+        <div id="dairy" class="box">
+          <h3>DAIRY</h3>
+          <div class="items"></div>
+        </div>
+        <div id="frozen" class="box">
+          <h3>FROZEN FOODS</h3>
+          <div class="items"></div>
+        </div>
+        <div id="bread-pasta" class="box">
+          <h3>BREAD FOODS</h3>
+          <div class="items"></div>
+        </div>
+        <div id="snacks" class="box">
+          <h3>SNACKS</h3>
+          <div class="items"></div>
+        </div>
+        <div id="beverages" class="box">
+          <h3>BEVERAGES</h3>
+          <div class="items"></div>
+        </div>
+        <div id="cleaning" class="box">
+          <h3>CLEANING</h3>
+          <div class="items"></div>
+        </div>
+        <div id="others" class="box">
+          <h3>OTHERS</h3>
+          <div class="items"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

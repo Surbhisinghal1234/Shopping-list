@@ -1,0 +1,416 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+.wrapper {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+.input-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem 0;
+}
+.select-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 2rem;
+  color: #fff;
+}
+
+.input-head label {
+  margin-bottom: 10px;
+}
+
+.input-head input,
+.input-head select {
+  padding: 8px;
+  width: 30%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+#categorySelect {
+  width: 30%;
+}
+.btn {
+  margin: auto;
+}
+
+button {
+  padding: 0.6rem 2rem;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.box {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem 1rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 45%;
+}
+#categories {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem 4rem;
+}
+
+.items {
+  margin-top: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem;
+  background-color: rgba(0, 0, 0, 0.349);
+  border: 1px solid #dddddd76;
+  border-radius: 4px;
+  color: white;
+  font-weight: 500;
+}
+
+.item-content {
+  margin-right: 0.6rem;
+}
+
+.quantity {
+  font-size: 14px;
+}
+
+.remove-btn {
+  padding: 0;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  color: #333;
+  padding: 0 0.3rem;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.box:hover {
+  background-color: #3333335d;
+  transition: all 0.4s ease-in-out;
+}
+.box:hover h3 {
+  background-color: #3333330f;
+  transition: all 0.4s ease-in-out;
+}
+#fruits-vegetables {
+  background: linear-gradient(rgba(0, 0, 0, 0.379), rgba(0, 0, 0, 0.429)),
+    url("./images/Fruit\ and\ Vegetable\ Sort.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: transform 1.5s ease; 
+}
+#fruits-vegetables:hover {
+  transform: scale(1.05) rotate(360deg);
+}
+#fruits-vegetables::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#fruits-vegetables:hover::after {
+  opacity: 1;
+}
+.box {
+  text-align: center;
+  height: 18rem;
+  width: 25%;
+  border-radius: 0.5rem;
+  overflow-y: scroll;
+}
+
+#meat-seafood {
+  background: linear-gradient(rgba(0, 0, 0, 0.379), rgba(0, 0, 0, 0.429)),
+    url("./images/pexels-photo-6510300.jpeg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: transform 1.5s ease;
+}
+#meat-seafood:hover {
+  transform: scale(1.05) rotate(360deg);
+}
+#meat-seafood::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#meat-seafood:hover::after {
+  opacity: 1;
+}
+.box::-webkit-scrollbar {
+  width: 0;
+  height: 0; 
+}
+.box h3 {
+  display: inline-block;
+  background-color: transparent;
+  color: white;
+  margin-bottom: 1rem;
+}
+#categories {
+  background-color: rgba(140, 151, 140, 0.443);
+  padding: 3rem 0 2rem 0;
+  overflow: hidden;
+}
+#dairy {
+  background: linear-gradient(rgba(0, 0, 0, 0.379), rgba(0, 0, 0, 0.429)),
+    url("./images/milk-2474993_1280.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: transform 1.5s ease;
+}
+#dairy:hover {
+  transform: scale(1.05) rotate(360deg);
+}
+#dairy::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#dairy:hover::after {
+  opacity: 1;
+}
+#frozen {
+  background: linear-gradient(rgba(0, 0, 0, 0.379), rgba(0, 0, 0, 0.429)),
+    url("./images/pexels-photo-858508.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: transform 1.5s ease;
+}
+#frozen:hover {
+  transform: scale(1.05) rotate(360deg);
+}
+#frozen::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#frozen:hover::after {
+  opacity: 1;
+}
+#bread-pasta {
+  background: linear-gradient(rgba(0, 0, 0, 0.379), rgba(0, 0, 0, 0.429)),
+    url("./images/pexels-photo-6605646.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: transform 1.5s ease;
+}
+#bread-pasta:hover {
+  transform: scale(1.05) rotate(360deg);
+}
+#bread-pasta::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#bread-pasta:hover::after {
+  opacity: 1;
+}
+#snacks {
+  background: linear-gradient(rgba(0, 0, 0, 0.379), rgba(0, 0, 0, 0.429)),
+    url("./images/black-coffee-1867753_1280.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: transform 1.5s ease;
+}
+#snacks:hover {
+  transform: scale(1.05) rotate(360deg);
+}
+#snacks::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#snacks:hover::after {
+  opacity: 1;
+}
+#beverages {
+  background: linear-gradient(rgba(0, 0, 0, 0.379), rgba(0, 0, 0, 0.429)),
+    url("./images/drinks-2578446_1280.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: transform 1.5s ease;
+}
+#beverages:hover {
+  transform: scale(1.05) rotate(360deg);
+}
+#beverages::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#beverages:hover::after {
+  opacity: 1;
+}
+#cleaning {
+  background: linear-gradient(rgba(0, 0, 0, 0.379), rgba(0, 0, 0, 0.429)),
+    url("./images/ai-generated-8702547_1280.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: transform 1.5s ease;
+}
+#cleaning:hover {
+  transform: scale(1.05) rotate(360deg);
+}
+#cleaning::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#cleaning:hover::after {
+  opacity: 1;
+}
+#others {
+  background: linear-gradient(rgba(0, 0, 0, 0.379), rgba(0, 0, 0, 0.429)),
+    url("./images/bell-peppers-1302126_1280.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  transition: transform 1.5s ease;
+}
+#others:hover {
+  transform: scale(1.05) rotate(360deg);
+}
+#others::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#others:hover::after {
+  opacity: 1;
+}
+
+.add-items {
+  padding: 2rem 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.379), rgba(0, 0, 0, 0.429)),
+    url("./images/supermarket-5202138_1280.jpg");
+  background-position: 50%, 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  gap: 2rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.add-items h2 {
+  color: #fff;
+}
+.wrapper h1 {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #1c487696;
+}
