@@ -99,6 +99,17 @@ button:hover {
   color: white;
   font-weight: 500;
   z-index: 9;
+  animation: slideInFromTop 0.5s ease forwards;
+}
+@keyframes slideInFromTop {
+  0% {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
 }
 
 .item-content {

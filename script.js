@@ -45,3 +45,5 @@ function addItem() {
   nameInput.value = "";
   quantityInput.value = "";
 }
+
+
