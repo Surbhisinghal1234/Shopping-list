@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Select Item</title>
+
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaQuery.css">
+
   </head>
   <body>
     <div class="wrapper">
@@ -16,6 +19,8 @@
           <div class="select-category">
             <label for="categorySelect">Select a Category:</label>
             <select id="categorySelect">
+              <option value=""disabled selected >Select</option>
+
               <option value="fruits-vegetables">Fruits/Vegetables</option>
               <option value="meat-seafood">Meat & Seafood</option>
               <option value="dairy">Dairy</option>

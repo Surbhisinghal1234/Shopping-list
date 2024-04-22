@@ -75,7 +75,10 @@ button:hover {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 3rem 4rem;
+  gap: 2rem 3.5rem;
+  background-color: rgba(140, 151, 140, 0.443);
+  padding: 3rem 0 2rem 0;
+  overflow: hidden;
 }
 
 .items {
@@ -95,6 +98,7 @@ button:hover {
   border-radius: 4px;
   color: white;
   font-weight: 500;
+  z-index: 9;
 }
 
 .item-content {
@@ -157,7 +161,7 @@ button:hover {
 .box {
   text-align: center;
   height: 18rem;
-  width: 25%;
+  width: 22rem;
   border-radius: 0.5rem;
   overflow-y: scroll;
 }
@@ -198,12 +202,11 @@ button:hover {
   display: inline-block;
   background-color: transparent;
   color: white;
+
   margin-bottom: 1rem;
 }
 #categories {
-  background-color: rgba(140, 151, 140, 0.443);
-  padding: 3rem 0 2rem 0;
-  overflow: hidden;
+
 }
 #dairy {
   background: linear-gradient(rgba(0, 0, 0, 0.379), rgba(0, 0, 0, 0.429)),

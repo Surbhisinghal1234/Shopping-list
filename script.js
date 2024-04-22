@@ -32,7 +32,7 @@ function addItem() {
   const removeButton = document.createElement("button");
   removeButton.innerHTML = "&times;";
   removeButton.classList.add("remove-btn");
-  removeButton.addEventListener("click", () => {
+  removeButton.addEventListener("click", (e) => {
     items.removeChild(newItem);
   });
 
@@ -45,6 +45,3 @@ function addItem() {
   nameInput.value = "";
   quantityInput.value = "";
 }
-
-
-

@@ -1,0 +1,24 @@
+@media screen and (max-width: 576px) {
+  .box {
+    margin: 0 2rem;
+    width: unset;
+  }
+  #categories {
+    flex-direction: column;
+    align-items: normal;
+    flex-wrap: unset;
+  }
+  .input-head input,
+  .input-head select {
+    width: unset;
+  }
+  #categorySelect {
+    width: unset;
+  }
+  .select-category {
+    flex-direction: column;
+  }
+  .box h3 {
+    font-size: 1rem;
+  }
+}
